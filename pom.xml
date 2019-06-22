@@ -6,6 +6,10 @@
 	<groupId>com.misout</groupId>
 	<artifactId>mqdemo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<modules>
+		<module>01-SimpleMQ</module>
+        <module>mqdemo-common</module>
+    </modules>
 	<packaging>pom</packaging>
 	<name>mqdemo_proj</name>
 	<description>mq demo</description>
