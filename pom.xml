@@ -7,8 +7,9 @@
 	<artifactId>mqdemo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<modules>
-		<module>01-SimpleMQ</module>
         <module>mqdemo-common</module>
+		<module>01-SimpleMQ</module>
+        <module>02-JMSDemo</module>
     </modules>
 	<packaging>pom</packaging>
 	<name>mqdemo_proj</name>
@@ -18,10 +19,13 @@
 		<project.jdk.source.version>1.7</project.jdk.source.version>
 		<project.jdk.target.version>1.7</project.jdk.target.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
 		<maven-compiler-plugin.version>3.5.1</maven-compiler-plugin.version>
 		<maven-resources-plugin.version>2.6</maven-resources-plugin.version>
 		<junit.version>4.12</junit.version>
+        <commons-lang3.version>3.7</commons-lang3.version>
+        <commons-collections.version>3.2.2</commons-collections.version>
+        <guava.version>23.0</guava.version>
+        <activemq-all.version>5.15.3</activemq-all.version>
 	</properties>
 
 	<dependencies>
@@ -34,19 +38,23 @@
 		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-lang3</artifactId>
-			<version>3.7</version>
+			<version>${commons-lang3.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>commons-collections</groupId>
 			<artifactId>commons-collections</artifactId>
-			<version>3.2.2</version>
+			<version>${commons-collections.version}</version>
 		</dependency>
-
 		<dependency>
 			<groupId>com.google.guava</groupId>
 			<artifactId>guava</artifactId>
-			<version>23.0</version>
+			<version>${guava.version}</version>
 		</dependency>
+        <dependency>
+            <groupId>org.apache.activemq</groupId>
+            <artifactId>activemq-all</artifactId>
+            <version>${activemq-all.version}</version>
+        </dependency>
 	</dependencies>
 
 	<build>
